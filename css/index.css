@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'simson';
+    src: url("../fonts/simson.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'library';
+    src: url('../fonts/library-webfont.woff2') format('woff2'),
+    url('../fonts/library-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'munich';
+    src: url('../fonts/munichregular-webfont.woff2') format('woff2'),
+    url('../fonts/munichregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*GLOBAL*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+html,body{
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    overflow-x: hidden;
+    max-width: 100%;
+
+}
+body{
+    background-color: #ffffff;
+
+}
+
+a{
+    text-decoration: none;
+    color : #f2cb9b ;
+}
+
+a:hover{
+    text-decoration: none !important;
+
+
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+
+}
+ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+
+}
+
+#loader {
+    background: url("../media/loader.gif") 50% 50% no-repeat #75292f;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: wait;
+}
+.bordeaux-bg{
+    background-color: #75292f ;
+}
+
+/*MAIN MENU*/
+#main-container{
+    width: 100%;
+    height: 100%;
+
+}
+
+#main-menu-container{
+    list-style: none;
+    display: block;
+    padding-top: 10%;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#rec{
+    display: block;
+    font-family: 'simson', sans-serif;
+    color : #f2cb9b !important;
+    width: 45%;
+    height: auto;
+    font-size: calc(10vw + 6vh) !important;
+
+    margin: auto;
+    transition:transform 0.5s , width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+#rec:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+
+}
+#rec-container{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.main-menu-items{
+    text-align: center;
+    display: inline-block;
+    padding: 3% 2% 3% 2%;
+    font-family: Roboto,sans-serif;
+    font-size: calc(1.5vw + 1.5vh);
+    transition:all 0s;
+
+}
+
+.main-menu-link:hover{
+    color: white;
+}
+#accueil-frame{
+    width: 100vw;
+    height: 0;
+    z-index: 10;
+    transition:width 0s, height 0.5s ease-in-out;
+    bottom: 0;
+
+}
